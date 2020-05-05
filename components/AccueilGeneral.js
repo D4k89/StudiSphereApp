@@ -2,8 +2,7 @@ import * as React from 'react';
 import { StyleSheet, Button, Text, TouchableOpacity, View } from 'react-native';
 
 
-
-export default function AccueilGeneral() {
+export default function AccueilGeneral({navigation}) {
     return (
         <View style = {styles.container}>
             <Text style = {styles.title}>Vous êtes :</Text>
@@ -13,7 +12,7 @@ export default function AccueilGeneral() {
                 <View style = {{padding: 40}}>
                     <Button style = {styles.ButtonDir} 
                     //Insérer la/les page(s) correspondante(s)
-                    onPress={() => navigation.navigate('root', {screen: 'DirecteurAccueil'})}
+                    //onPress={() =>}
                     title = "Directeur d'école ou de campus"
                     color = "#4d0099"
                     />
